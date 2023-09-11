@@ -51,6 +51,7 @@ const continueWatchData = [
 ];
 
 const ContinueWatch = ({ onFocus }:any) => {
+  // console.log(onFocus)
   const router = useRouter();
   const { ref, focusKey } = useFocusable({
     onFocus,

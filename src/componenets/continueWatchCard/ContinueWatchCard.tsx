@@ -7,6 +7,7 @@ import { useFocusable } from "@noriginmedia/norigin-spatial-navigation";
 import { useRouter } from "next/navigation";
 
 const ContinueWatchCard = ({ data, onFocus, onEnterPress }:any) => {
+  // console.log(onFocus)
   const router = useRouter();
 
   const { ref, focused, focusKey } = useFocusable({

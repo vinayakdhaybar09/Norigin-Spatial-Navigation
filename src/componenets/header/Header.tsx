@@ -37,7 +37,7 @@ init({
   visualDebug: false,
 });
 
-const Header = () => {
+const Header = ({ focusKey: focusKeyParam }:any) => {
   const router = useRouter();
   const { ref, focusKey, focusSelf, hasFocusedChild } = useFocusable({
     focusable: true,
@@ -45,7 +45,7 @@ const Header = () => {
     trackChildren: true,
     autoRestoreFocus: true,
     isFocusBoundary: false,
-    // focusKey: focusKeyParam,
+    focusKey: focusKeyParam,
     preferredChildFocusKey: undefined,
     onEnterPress: () => {},
     onEnterRelease: () => {},

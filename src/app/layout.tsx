@@ -60,7 +60,7 @@ export default function RootLayout({
               left: "0px",
             }}
           >
-            <Header/>
+            <Header focusKey="MENU"/>
           </Box>
           <Box sx={{ width: "92%", paddingTop: "5vh" }}>{children}</Box>
         </Box>
